@@ -58,6 +58,22 @@ class ApiClient {
     localStorage.setItem('auth_token', token);
   }
 
+  // Organization token management
+  setOrganizationToken(token: string): void {
+    if (typeof window === 'undefined') return;
+    localStorage.setItem('org_token', token);
+  }
+
+  getOrganizationToken(): string | null {
+    if (typeof window === 'undefined') return null;
+    return localStorage.getItem('org_token');
+  }
+
+  clearOrganizationToken(): void {
+    if (typeof window === 'undefined') return;
+    localStorage.removeItem('org_token');
+  }
+
   get axiosInstance(): AxiosInstance {
     return this.client;
   }

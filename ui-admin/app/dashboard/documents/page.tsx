@@ -4,10 +4,16 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { documentsApi } from "@/lib/api";
 import { EsfDocument } from "@/lib/types";
-import { Search, FileText, Calendar } from "lucide-react";
+import { Search, FileText, Calendar, Eye, Trash2 } from "lucide-react";
 import { format } from "date-fns";
+import { ru } from "date-fns/locale";
+import { useToast } from "@/hooks/useToast";
+import { useOrganizationToken } from "@/hooks/useOrganizationToken";
+import Link from "next/link";
 
 export default function DocumentsPage() {
+  const { success, error: showError } = useToast();
+  const { getOrganizationToken } = useOrganizationToken();
   const [searchTerm, setSearchTerm] = useState("");
 
   const { data, isLoading, error } = useQuery({
@@ -71,11 +77,39 @@ export default function DocumentsPage() {
               className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow p-6"
             >
               <div className="flex items-start justify-between mb-4">
-                <div className="flex items-center">
-                  <FileText className="w-5 h-5 text-blue-600 mr-2" />
-                  <h3 className="text-sm font-semibold text-gray-900">
+                <div className="flex items-center flex-1">
+                  <FileText className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0" />
+                  <h3 className="text-sm font-semibold text-gray-900 line-clamp-2">
                     {doc.foreignName || "Без названия"}
                   </h3>
+                </div>
+                <div className="flex space-x-2 ml-2">
+                  <Link
+                    href={`/dashboard/documents/${doc.id}`}
+                    onClick={() => {
+                      const orgToken = getOrganizationToken();
+                      if (orgToken) {
+                        localStorage.setItem("doc_org_token", orgToken);
+                      }
+                    }}
+                    className="text-green-600 hover:text-green-700 transition-colors flex-shrink-0"
+                    title="Просмотреть детали"
+                  >
+                    <Eye className="w-4 h-4" />
+                  </Link>
+                  <button
+                    onClick={() => {
+                      if (
+                        confirm("Вы уверены, что хотите удалить этот документ?")
+                      ) {
+                        // Delete will be implemented
+                        showError("Удаление еще не реализовано");
+                      }
+                    }}
+                    className="text-red-600 hover:text-red-700 transition-colors flex-shrink-0"
+                  >
+                    <Trash2 className="w-4 h-4" />
+                  </button>
                 </div>
               </div>
 
@@ -83,14 +117,14 @@ export default function DocumentsPage() {
                 <div className="flex justify-between">
                   <span className="text-gray-500">ИНН контрагента:</span>
                   <span className="font-medium text-gray-900">
-                    {doc.contractorTin}
+                    {doc.contractorTin || "—"}
                   </span>
                 </div>
 
                 <div className="flex justify-between">
                   <span className="text-gray-500">Валюта:</span>
                   <span className="font-medium text-gray-900">
-                    {doc.currencyCode}
+                    {doc.currencyCode || "—"}
                   </span>
                 </div>
 
@@ -98,7 +132,7 @@ export default function DocumentsPage() {
                   <div className="flex justify-between">
                     <span className="text-gray-500">Сумма:</span>
                     <span className="font-semibold text-gray-900">
-                      {doc.totalCurrencyValue.toLocaleString()}{" "}
+                      {doc.totalCurrencyValue.toLocaleString("ru-RU")}{" "}
                       {doc.currencyCode}
                     </span>
                   </div>
@@ -107,7 +141,11 @@ export default function DocumentsPage() {
                 <div className="flex items-center text-gray-500 pt-2 border-t">
                   <Calendar className="w-4 h-4 mr-1" />
                   <span className="text-xs">
-                    {format(new Date(doc.deliveryDate), "dd.MM.yyyy")}
+                    {doc.deliveryDate
+                      ? format(new Date(doc.deliveryDate), "dd.MM.yyyy", {
+                          locale: ru,
+                        })
+                      : "—"}
                   </span>
                 </div>
 

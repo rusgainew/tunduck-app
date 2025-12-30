@@ -426,3 +426,301 @@ time="2025-12-30 18:11:19" level=info msg="EsfDocumentController initialized" fi
 time="2025-12-30 18:11:19" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
 time="2025-12-30 18:11:19" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
 time="2025-12-30 18:11:19" level=info msg="Starting server on localhost:8080"
+time="2025-12-30 18:41:34" level=info msg="Database connection established"
+time="2025-12-30 18:41:34" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 18:41:34" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 18:41:34" level=info msg="Database migrations completed successfully"
+time="2025-12-30 18:41:34" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 18:41:34" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 18:41:34" level=info msg="Starting cache warming..."
+time="2025-12-30 18:41:34" level=info msg="Cache warming completed"
+time="2025-12-30 18:41:34" level=info msg="Organization database service initialized"
+time="2025-12-30 18:41:34" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 18:41:34" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 18:41:34" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 18:41:34" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 18:41:34" level=info msg="Starting server on localhost:8080"
+time="2025-12-30 18:42:05" level=info msg="Starting user registration" email=ruslan.gaevoi.1982@gmail.com file="service_impl/user_service_impl.go:53" func=Register username=rusgai
+time="2025-12-30 18:42:05" level=info msg="User registered successfully" file="service_impl/user_service_impl.go:104" func=func1 user_id=e30cc032-b8f4-40fc-b167-40b33555de39 username=rusgai
+time="2025-12-30 18:42:05" level=info msg="User registered successfully" file="controllers/auth_controller.go:95" func=register username=rusgai
+time="2025-12-30 18:42:05" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=60 method=POST path=/api/auth/register status=201
+time="2025-12-30 18:42:06" level=info msg="Fetching all users" file="controllers/user_controller.go:41" func=getAllUsers
+time="2025-12-30 18:42:06" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=6 method=GET path="/api/users?page=1&limit=10" status=200
+time="2025-12-30 18:42:06" level=info msg="Fetching all ESF organizations" file="controllers/esf_organization_controller.go:61" func=getEsfOrganizations
+time="2025-12-30 18:42:06" level=info msg="Fetching all organizations" file="service_impl/esf_organization_service_impl.go:47" func=GetAllOrganizations
+time="2025-12-30 18:42:06" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:06" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:06" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=1 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:42:06" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=4 method=GET path=/api/esf-organizations status=200
+time="2025-12-30 18:42:07" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:07" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:07" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:42:09" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:09" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:09" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:42:13" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:13" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:13" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:42:37" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:37" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:37" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:42:38" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:38" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:38" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:42:40" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:40" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:40" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:42:44" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:44" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:44" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:42:52" level=info msg="Fetching all users" file="controllers/user_controller.go:41" func=getAllUsers
+time="2025-12-30 18:42:52" level=info msg="Fetching all ESF organizations" file="controllers/esf_organization_controller.go:61" func=getEsfOrganizations
+time="2025-12-30 18:42:52" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:52" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:52" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:42:52" level=info msg="Fetching all organizations" file="service_impl/esf_organization_service_impl.go:47" func=GetAllOrganizations
+time="2025-12-30 18:42:52" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=2 method=GET path="/api/users?page=1&limit=10" status=200
+time="2025-12-30 18:42:52" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=9 method=GET path=/api/esf-organizations status=200
+time="2025-12-30 18:42:53" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:53" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:53" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:42:55" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:55" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:55" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:42:58" level=info msg="Fetching all users" file="controllers/user_controller.go:41" func=getAllUsers
+time="2025-12-30 18:42:58" level=info msg="Fetching all ESF organizations" file="controllers/esf_organization_controller.go:61" func=getEsfOrganizations
+time="2025-12-30 18:42:58" level=info msg="Fetching all organizations" file="service_impl/esf_organization_service_impl.go:47" func=GetAllOrganizations
+time="2025-12-30 18:42:58" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:58" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:58" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:42:58" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=1 method=GET path=/api/esf-organizations status=200
+time="2025-12-30 18:42:58" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=5 method=GET path="/api/users?page=1&limit=10" status=200
+time="2025-12-30 18:42:59" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:42:59" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:42:59" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:43:01" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:43:01" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:43:01" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:43:02" level=info msg="User logged out successfully" file="controllers/auth_controller.go:224" func=logout user_id=e30cc032-b8f4-40fc-b167-40b33555de39
+time="2025-12-30 18:43:02" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=POST path=/api/auth/logout status=200
+time="2025-12-30 18:43:17" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=rusgai
+time="2025-12-30 18:43:17" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=e30cc032-b8f4-40fc-b167-40b33555de39 username=rusgai
+time="2025-12-30 18:43:17" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=rusgai
+time="2025-12-30 18:43:17" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=75 method=POST path=/api/auth/login status=200
+time="2025-12-30 18:43:17" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:43:17" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:43:17" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:43:18" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:43:18" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:43:18" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:43:20" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:43:20" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:43:20" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:43:24" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:43:24" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:43:24" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:47:03" level=info msg="Fetching all users" file="controllers/user_controller.go:41" func=getAllUsers
+time="2025-12-30 18:47:03" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=4 method=GET path="/api/users?page=1&limit=10" status=200
+time="2025-12-30 18:47:11" level=info msg="Fetching all ESF organizations" file="controllers/esf_organization_controller.go:61" func=getEsfOrganizations
+time="2025-12-30 18:47:11" level=info msg="Fetching all organizations" file="service_impl/esf_organization_service_impl.go:47" func=GetAllOrganizations
+time="2025-12-30 18:47:11" level=info msg="Fetching all users" file="controllers/user_controller.go:41" func=getAllUsers
+time="2025-12-30 18:47:11" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:47:11" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:47:11" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:47:11" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=3 method=GET path=/api/esf-organizations status=200
+time="2025-12-30 18:47:11" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=13 method=GET path="/api/users?page=1&limit=10" status=200
+time="2025-12-30 18:51:04" level=info msg="Fetching all users" file="controllers/user_controller.go:41" func=getAllUsers
+time="2025-12-30 18:51:04" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=6 method=GET path="/api/users?page=1&limit=10" status=200
+time="2025-12-30 18:51:04" level=info msg="Fetching all ESF organizations" file="controllers/esf_organization_controller.go:61" func=getEsfOrganizations
+time="2025-12-30 18:51:04" level=info msg="Fetching all organizations" file="service_impl/esf_organization_service_impl.go:47" func=GetAllOrganizations
+time="2025-12-30 18:51:04" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=2 method=GET path=/api/esf-organizations status=200
+time="2025-12-30 18:51:04" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:51:04" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:51:04" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:53:14" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=rusgai
+time="2025-12-30 18:53:14" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=e30cc032-b8f4-40fc-b167-40b33555de39 username=rusgai
+time="2025-12-30 18:53:14" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=rusgai
+time="2025-12-30 18:53:14" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=55 method=POST path=/api/auth/login status=200
+time="2025-12-30 18:53:14" level=info msg="Fetching all users" file="controllers/user_controller.go:41" func=getAllUsers
+time="2025-12-30 18:53:14" level=info msg="Fetching all ESF organizations" file="controllers/esf_organization_controller.go:61" func=getEsfOrganizations
+time="2025-12-30 18:53:14" level=info msg="Fetching all organizations" file="service_impl/esf_organization_service_impl.go:47" func=GetAllOrganizations
+time="2025-12-30 18:53:14" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=3 method=GET path="/api/users?page=1&limit=10" status=200
+time="2025-12-30 18:53:14" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:53:14" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:53:14" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:53:14" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=1 method=GET path=/api/esf-organizations status=200
+time="2025-12-30 18:53:15" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:53:15" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:53:15" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:53:17" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:53:17" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:53:17" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:56:26" level=info msg="Fetching all ESF organizations" file="controllers/esf_organization_controller.go:61" func=getEsfOrganizations
+time="2025-12-30 18:56:26" level=info msg="Fetching all organizations" file="service_impl/esf_organization_service_impl.go:47" func=GetAllOrganizations
+time="2025-12-30 18:56:26" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=1 method=GET path=/api/esf-organizations status=200
+time="2025-12-30 18:56:47" level=info msg="Створення нової ЕСФ організації" file="controllers/esf_organization_controller.go:108" func=createEsfOrganization
+time="2025-12-30 18:56:47" level=info msg="Creating new organization" file="service_impl/esf_organization_service_impl.go:123" func=CreateOrganization name="rem stroi"
+time="2025-12-30 18:56:47" level=info msg="Organization created successfully" dbName=rem_stroi_db file="service_impl/esf_organization_service_impl.go:155" func=CreateOrganization id=1f39fda1-49c3-4313-b617-69d4a6f91a23
+time="2025-12-30 18:56:47" level=info msg="Організацію успішно створено" dbName=rem_stroi_db file="controllers/esf_organization_controller.go:134" func=createEsfOrganization id=1f39fda1-49c3-4313-b617-69d4a6f91a23
+time="2025-12-30 18:56:47" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=226 method=POST path=/api/esf-organizations status=201
+time="2025-12-30 18:56:47" level=info msg="Fetching all ESF organizations" file="controllers/esf_organization_controller.go:61" func=getEsfOrganizations
+time="2025-12-30 18:56:47" level=info msg="Fetching all organizations" file="service_impl/esf_organization_service_impl.go:47" func=GetAllOrganizations
+time="2025-12-30 18:56:47" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-organizations status=200
+time="2025-12-30 18:57:16" level=info msg="Fetching all ESF organizations" file="controllers/esf_organization_controller.go:61" func=getEsfOrganizations
+time="2025-12-30 18:57:16" level=info msg="Fetching all organizations" file="service_impl/esf_organization_service_impl.go:47" func=GetAllOrganizations
+time="2025-12-30 18:57:16" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=2 method=GET path=/api/esf-organizations status=200
+time="2025-12-30 18:58:15" level=info msg="Створення нової ЕСФ організації" file="controllers/esf_organization_controller.go:108" func=createEsfOrganization
+time="2025-12-30 18:58:15" level=info msg="Creating new organization" file="service_impl/esf_organization_service_impl.go:123" func=CreateOrganization name="фаиза"
+time="2025-12-30 18:58:15" level=info msg="Organization created successfully" dbName=_db file="service_impl/esf_organization_service_impl.go:155" func=CreateOrganization id=c3ef5be8-2d49-4279-ad7a-c3cd061e8ef8
+time="2025-12-30 18:58:15" level=info msg="Організацію успішно створено" dbName=_db file="controllers/esf_organization_controller.go:134" func=createEsfOrganization id=c3ef5be8-2d49-4279-ad7a-c3cd061e8ef8
+time="2025-12-30 18:58:15" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=195 method=POST path=/api/esf-organizations status=201
+time="2025-12-30 18:58:15" level=info msg="Fetching all ESF organizations" file="controllers/esf_organization_controller.go:61" func=getEsfOrganizations
+time="2025-12-30 18:58:15" level=info msg="Fetching all organizations" file="service_impl/esf_organization_service_impl.go:47" func=GetAllOrganizations
+time="2025-12-30 18:58:15" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-organizations status=200
+time="2025-12-30 18:58:38" level=info msg="Вибірка ЕСФ організації по ID" file="controllers/esf_organization_controller.go:146" func=getByEsfOrganization id=1f39fda1-49c3-4313-b617-69d4a6f91a23
+time="2025-12-30 18:58:38" level=info msg="Fetching organization by ID" file="service_impl/esf_organization_service_impl.go:72" func=GetOrganizationByID org_id=1f39fda1-49c3-4313-b617-69d4a6f91a23
+time="2025-12-30 18:58:38" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:58:38" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:58:38" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path="/api/esf-documents?org_id=1f39fda1-49c3-4313-b617-69d4a6f91a23" status=400
+time="2025-12-30 18:58:38" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=6 method=GET path=/api/esf-organizations/1f39fda1-49c3-4313-b617-69d4a6f91a23 status=200
+time="2025-12-30 18:58:39" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:58:39" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:58:39" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path="/api/esf-documents?org_id=1f39fda1-49c3-4313-b617-69d4a6f91a23" status=400
+time="2025-12-30 18:58:41" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:58:41" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:58:41" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path="/api/esf-documents?org_id=1f39fda1-49c3-4313-b617-69d4a6f91a23" status=400
+time="2025-12-30 18:58:45" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:58:45" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:58:45" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path="/api/esf-documents?org_id=1f39fda1-49c3-4313-b617-69d4a6f91a23" status=400
+time="2025-12-30 18:58:56" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:58:56" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:58:56" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:58:57" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:58:57" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:58:57" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:58:59" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:58:59" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:58:59" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:59:03" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:59:03" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:59:03" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:59:10" level=info msg="Fetching all users" file="controllers/user_controller.go:41" func=getAllUsers
+time="2025-12-30 18:59:10" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=4 method=GET path="/api/users?page=1&limit=10" status=200
+time="2025-12-30 18:59:11" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:59:11" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:59:11" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:59:12" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:59:12" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:59:12" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:59:14" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:59:14" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:59:14" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:59:18" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 18:59:18" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 18:59:18" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 18:59:52" level=info msg="Fetching all users" file="controllers/user_controller.go:41" func=getAllUsers
+time="2025-12-30 18:59:52" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=2 method=GET path="/api/users?page=1&limit=10" status=200
+time="2025-12-30 18:59:57" level=info msg="Fetching all ESF organizations" file="controllers/esf_organization_controller.go:61" func=getEsfOrganizations
+time="2025-12-30 18:59:57" level=info msg="Fetching all organizations" file="service_impl/esf_organization_service_impl.go:47" func=GetAllOrganizations
+time="2025-12-30 18:59:57" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=2 method=GET path=/api/esf-organizations status=200
+time="2025-12-30 19:00:11" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:00:11" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:00:11" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:00:12" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:00:12" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:00:12" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:00:14" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:00:14" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:00:14" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:00:18" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:00:18" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:00:18" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:00:28" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:00:28" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:00:28" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:00:29" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:00:29" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:00:29" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:00:31" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:00:31" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:00:31" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:00:35" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:00:35" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:00:35" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:01:34" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:01:34" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:01:34" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:01:35" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:01:35" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:01:35" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=4 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:01:37" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:01:37" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:01:37" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:01:41" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:01:41" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:01:41" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:01:46" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:01:46" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:01:46" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:01:47" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:01:47" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:01:47" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:01:49" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:01:49" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:01:49" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:01:53" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:01:53" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:01:53" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:02:28" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:02:28" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:02:28" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=3 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:02:29" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:02:29" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:02:29" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:02:31" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:02:31" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:02:31" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:02:35" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:02:35" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:02:35" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:02:37" level=info msg="Fetching all users" file="controllers/user_controller.go:41" func=getAllUsers
+time="2025-12-30 19:02:37" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=9 method=GET path="/api/users?page=1&limit=10" status=200
+time="2025-12-30 19:02:37" level=info msg="Fetching all ESF organizations" file="controllers/esf_organization_controller.go:61" func=getEsfOrganizations
+time="2025-12-30 19:02:37" level=info msg="Fetching all organizations" file="service_impl/esf_organization_service_impl.go:47" func=GetAllOrganizations
+time="2025-12-30 19:02:37" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=3 method=GET path=/api/esf-organizations status=200
+time="2025-12-30 19:02:37" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:02:37" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:02:37" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:02:38" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:02:38" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:02:38" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:02:40" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:02:40" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:02:40" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:02:44" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:02:44" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:02:44" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:02:59" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:02:59" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:02:59" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:03:00" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:03:00" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:03:00" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:03:02" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:03:02" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:03:02" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:03:06" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:03:06" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:03:06" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:03:09" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:03:09" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:03:09" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:03:11" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:03:11" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:03:11" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:03:13" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:03:13" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:03:13" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
+time="2025-12-30 19:03:17" level=info msg="Fetching ESF documents" file="controllers/esf_document_controller.go:63" func=getEsfDocuments
+time="2025-12-30 19:03:17" level=warning msg="Failed to resolve org ID" error="organization id is required (header X-Org-Id or query orgId)" file="controllers/esf_document_controller.go:67" func=getEsfDocuments
+time="2025-12-30 19:03:17" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/esf-documents status=400
