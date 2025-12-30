@@ -55,18 +55,17 @@ func TestCacheIntegration_UserService(t *testing.T) {
 		err := cacheManager.Generic().Set(ctx, testKey, testUser, 1*time.Hour)
 		require.NoError(t, err)
 
-		// Retrieve from cache
+		// Retrieve from cache - JSON десериализуется в map[string]interface{}
 		val, err := cacheManager.Generic().Get(ctx, testKey)
 		require.NoError(t, err)
 		require.NotNil(t, val)
 
-		// Unmarshalling for comparison
-		cachedUser, ok := val.(*entity.User)
-		assert.True(t, ok, "Value should be User pointer")
+		// Проверяем что получили map (так работает JSON unmarshal в interface{})
+		cachedData, ok := val.(map[string]interface{})
+		assert.True(t, ok, "Value should be deserialized as map[string]interface{}")
 		if ok {
-			assert.Equal(t, testUser.ID, cachedUser.ID)
-			assert.Equal(t, testUser.Username, cachedUser.Username)
-			assert.Equal(t, testUser.Email, cachedUser.Email)
+			assert.Equal(t, testUser.Username, cachedData["username"])
+			assert.Equal(t, testUser.Email, cachedData["email"])
 		}
 	})
 
@@ -293,34 +292,29 @@ func TestCacheWithDatabase(t *testing.T) {
 }
 
 // Helper function to clean up test keys
-func cleanupTestKeys(t *testing.T, redisClient *redis.Client) {
+func cleanupTestKeys(_ *testing.T, redisClient *redis.Client) {
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 
-	pattern := "test_*"
-	iter := redisClient.Scan(ctx, 0, pattern, 0).Iterator()
-	for iter.Next(ctx) {
-		redisClient.Del(ctx, iter.Val())
+	// Очищаем с префиксом "cache:" так как используется Generic cache
+	patterns := []string{
+		"cache:test_*",
+		"cache:batch_key_*",
+		"cache:perf_key_*",
+		"cache:read_perf_key_*",
+		"test_*", // для совместимости
+		"batch_key_*",
+		"perf_key_*",
+		"read_perf_key_*",
 	}
 
-	pattern = "batch_key_*"
-	iter = redisClient.Scan(ctx, 0, pattern, 0).Iterator()
-	for iter.Next(ctx) {
-		redisClient.Del(ctx, iter.Val())
+	for _, pattern := range patterns {
+		iter := redisClient.Scan(ctx, 0, pattern, 0).Iterator()
+		for iter.Next(ctx) {
+			redisClient.Del(ctx, iter.Val())
+		}
 	}
 
-	pattern = "perf_key_*"
-	iter = redisClient.Scan(ctx, 0, pattern, 0).Iterator()
-	for iter.Next(ctx) {
-		redisClient.Del(ctx, iter.Val())
-	}
-
-	pattern = "read_perf_key_*"
-	iter = redisClient.Scan(ctx, 0, pattern, 0).Iterator()
-	for iter.Next(ctx) {
-		redisClient.Del(ctx, iter.Val())
-	}
-
-	pattern = "cache_fallback_test"
-	redisClient.Del(ctx, pattern)
+	// Очистка специальных тестовых ключей
+	redisClient.Del(ctx, "cache_fallback_test")
 }

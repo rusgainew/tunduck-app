@@ -34,7 +34,7 @@ func NewAuthController(app *fiber.App, userService services.UserService, log *lo
 		cacheManager: cacheManager,
 	}
 
-	l.Info(context.TODO(), "AuthController initialized")
+	l.Info(context.Background(), "AuthController initialized")
 	controller.registerRoutes(app, log)
 }
 

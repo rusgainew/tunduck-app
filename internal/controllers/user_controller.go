@@ -24,7 +24,7 @@ func NewUserController(app *fiber.App, log *logrus.Logger, db *gorm.DB) {
 		db:     db,
 	}
 
-	controller.logger.Info(context.TODO(), "UserController initialized", logrus.Fields{})
+	controller.logger.Info(context.Background(), "UserController initialized", logrus.Fields{})
 	controller.registerRoutes(app)
 }
 

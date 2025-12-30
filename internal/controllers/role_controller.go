@@ -35,7 +35,7 @@ func NewRoleController(app *fiber.App, log *logrus.Logger, db *gorm.DB) {
 		db:          db,
 	}
 
-	controller.logger.Info(context.TODO(), "RoleController инициализирован", logrus.Fields{})
+	controller.logger.Info(context.Background(), "RoleController инициализирован", logrus.Fields{})
 	controller.registerRoutes(app)
 }
 

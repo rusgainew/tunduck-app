@@ -12,7 +12,13 @@ import (
 func JWTMiddleware() fiber.Handler {
 	secret := os.Getenv("JWT_SECRET")
 	if secret == "" {
-		panic("JWT_SECRET environment variable is not set")
+		// Возвращаем middleware который всегда возвращает ошибку
+		return func(c *fiber.Ctx) error {
+			return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{
+				"error":   "Configuration Error",
+				"message": "JWT_SECRET environment variable is not set",
+			})
+		}
 	}
 
 	return jwtware.New(jwtware.Config{
@@ -38,7 +44,10 @@ func GetUserFromToken(c *fiber.Ctx) (*jwt.MapClaims, error) {
 func OptionalJWT() fiber.Handler {
 	secret := os.Getenv("JWT_SECRET")
 	if secret == "" {
-		panic("JWT_SECRET environment variable is not set")
+		// Возвращаем middleware который всегда продолжает выполнение
+		return func(c *fiber.Ctx) error {
+			return c.Next()
+		}
 	}
 
 	return func(c *fiber.Ctx) error {

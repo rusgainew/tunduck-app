@@ -16,7 +16,10 @@ import (
 // с логированием и правильной обработкой ошибок
 func JWTAuthMiddleware(secret string, logger *logrus.Logger) fiber.Handler {
 	if secret == "" {
-		panic("JWT_SECRET is required for JWT middleware")
+		logger.Fatal("JWT_SECRET is required for JWT middleware")
+		return func(c *fiber.Ctx) error {
+			return response.Error(c, apperror.New(apperror.ErrInternal, "JWT middleware configuration error"))
+		}
 	}
 
 	return jwtware.New(jwtware.Config{
@@ -42,7 +45,10 @@ func JWTAuthMiddleware(secret string, logger *logrus.Logger) fiber.Handler {
 // Если токен присутствует - валидирует его, если нет - продолжает выполнение
 func JWTOptionalMiddleware(secret string, logger *logrus.Logger) fiber.Handler {
 	if secret == "" {
-		panic("JWT_SECRET is required for JWT middleware")
+		logger.Fatal("JWT_SECRET is required for JWT middleware")
+		return func(c *fiber.Ctx) error {
+			return response.Error(c, apperror.New(apperror.ErrInternal, "JWT middleware configuration error"))
+		}
 	}
 
 	return func(c *fiber.Ctx) error {
@@ -89,12 +95,14 @@ func GetUserIDFromContext(c *fiber.Ctx) (uuid.UUID, error) {
 
 	token, ok := user.(*jwt.Token)
 	if !ok {
-		return uuid.UUID{}, apperror.New(apperror.ErrInvalidToken, "Invalid token format in context")
+		// Логируем тип для отладки
+		return uuid.UUID{}, apperror.New(apperror.ErrInvalidToken, fmt.Sprintf("Invalid token format in context, got type: %T", user))
 	}
 
 	claims, ok := token.Claims.(jwt.MapClaims)
 	if !ok {
-		return uuid.UUID{}, apperror.New(apperror.ErrInvalidToken, "Invalid token claims")
+		// Логируем тип Claims для отладки
+		return uuid.UUID{}, apperror.New(apperror.ErrInvalidToken, fmt.Sprintf("Invalid token claims, got type: %T", token.Claims))
 	}
 
 	// Извлекаем user_id из claims

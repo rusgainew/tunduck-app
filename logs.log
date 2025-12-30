@@ -1,3 +1,428 @@
 time="2025-12-30 12:14:18" level=error msg="No .env file found\n-> open .env: no such file or directory"
 time="2025-12-30 12:18:16" level=fatal msg="missing required environment variables: [APP_HOST APP_PORT DB_HOST DB_PORT DB_USER DB_NAME DB_PASSWORD JWT_SECRET]"
 time="2025-12-30 12:22:21" level=fatal msg="Failed to connect to database: failed to connect to `user=admin database=global_db`: 127.0.0.1:5432 (localhost): failed SASL auth: FATAL: password authentication failed for user \"admin\" (SQLSTATE 28P01)"
+time="2025-12-30 13:12:05" level=info msg="Database connection established"
+time="2025-12-30 13:12:05" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 13:12:05" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 13:12:06" level=info msg="Database migrations completed successfully"
+time="2025-12-30 13:12:06" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 13:12:06" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 13:12:06" level=info msg="Starting cache warming..."
+time="2025-12-30 13:12:06" level=info msg="Cache warming completed"
+time="2025-12-30 13:12:06" level=info msg="Organization database service initialized"
+time="2025-12-30 13:12:06" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 13:12:06" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 13:12:06" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 13:12:06" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 13:12:06" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 13:16:40" level=info msg="Database connection established"
+time="2025-12-30 13:16:40" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 13:16:40" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 13:16:40" level=info msg="Database migrations completed successfully"
+time="2025-12-30 13:16:40" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 13:16:40" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 13:16:40" level=info msg="Starting cache warming..."
+time="2025-12-30 13:16:40" level=info msg="Cache warming completed"
+time="2025-12-30 13:16:40" level=info msg="Organization database service initialized"
+time="2025-12-30 13:16:40" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 13:16:40" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 13:16:40" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 13:16:40" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 13:16:40" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 13:18:27" level=info msg="Database connection established"
+time="2025-12-30 13:18:27" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 13:18:27" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 13:18:27" level=info msg="Database migrations completed successfully"
+time="2025-12-30 13:18:27" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 13:18:27" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 13:18:27" level=info msg="Starting cache warming..."
+time="2025-12-30 13:18:27" level=info msg="Cache warming completed"
+time="2025-12-30 13:18:27" level=info msg="Organization database service initialized"
+time="2025-12-30 13:18:27" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 13:18:27" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 13:18:27" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 13:18:27" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 13:18:27" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 13:18:38" level=info msg="Database connection established"
+time="2025-12-30 13:18:38" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 13:18:38" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 13:18:38" level=info msg="Database migrations completed successfully"
+time="2025-12-30 13:18:38" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 13:18:38" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 13:18:38" level=info msg="Starting cache warming..."
+time="2025-12-30 13:18:38" level=info msg="Cache warming completed"
+time="2025-12-30 13:18:38" level=info msg="Organization database service initialized"
+time="2025-12-30 13:18:38" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 13:18:38" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 13:18:38" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 13:18:38" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 13:18:38" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 13:20:09" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/ status=200
+time="2025-12-30 13:20:09" level=warning msg="HTTP error occurred" message="Cannot GET /" method=GET path=/ request_id= status=404
+time="2025-12-30 13:20:09" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/favicon.ico status=200
+time="2025-12-30 13:20:09" level=warning msg="HTTP error occurred" message="Cannot GET /favicon.ico" method=GET path=/favicon.ico request_id= status=404
+time="2025-12-30 13:20:58" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/swagger status=301
+time="2025-12-30 13:20:58" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/swagger/index.html status=200
+time="2025-12-30 13:20:58" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/swagger/swagger-ui.css status=200
+time="2025-12-30 13:20:58" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/swagger/swagger-ui-standalone-preset.js status=200
+time="2025-12-30 13:20:58" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=9 method=GET path=/swagger/swagger-ui-bundle.js status=200
+time="2025-12-30 13:20:58" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/swagger/doc.json status=200
+time="2025-12-30 13:20:58" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/swagger/favicon-32x32.png status=200
+time="2025-12-30 13:52:39" level=info msg="Starting user registration" email=ruslan.gaevoi.1982@gmail.com file="service_impl/user_service_impl.go:52" func=Register username=rusgai
+time="2025-12-30 13:52:39" level=info msg="User registered successfully" file="service_impl/user_service_impl.go:103" func=func1 user_id=c961dfa6-db58-45fd-9d47-150e8cdaf8c5 username=rusgai
+time="2025-12-30 13:52:39" level=info msg="User registered successfully" file="controllers/auth_controller.go:95" func=register username=rusgai
+time="2025-12-30 13:52:39" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=80 method=POST path=/api/auth/register status=201
+time="2025-12-30 13:53:15" level=info msg="Starting user login" file="service_impl/user_service_impl.go:134" func=Login username=rusgai
+time="2025-12-30 13:53:15" level=warning msg="Login failed: invalid password" file="service_impl/user_service_impl.go:172" func=Login user_id=c961dfa6-db58-45fd-9d47-150e8cdaf8c5 username=rusgai
+time="2025-12-30 13:53:15" level=warning msg="Login failed" file="controllers/auth_controller.go:129" func=login username=rusgai
+time="2025-12-30 13:53:15" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=84 method=POST path=/api/auth/login status=401
+time="2025-12-30 13:53:25" level=info msg="Starting user login" file="service_impl/user_service_impl.go:134" func=Login username=rusgai
+time="2025-12-30 13:53:25" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:190" func=Login user_id=c961dfa6-db58-45fd-9d47-150e8cdaf8c5 username=rusgai
+time="2025-12-30 13:53:25" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=rusgai
+time="2025-12-30 13:53:25" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=58 method=POST path=/api/auth/login status=200
+time="2025-12-30 13:54:23" level=info msg="Starting user login" file="service_impl/user_service_impl.go:134" func=Login username=rusgai
+time="2025-12-30 13:54:23" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:190" func=Login user_id=c961dfa6-db58-45fd-9d47-150e8cdaf8c5 username=rusgai
+time="2025-12-30 13:54:23" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=rusgai
+time="2025-12-30 13:54:23" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=82 method=POST path=/api/auth/login status=200
+time="2025-12-30 13:57:36" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:189" func=logout
+time="2025-12-30 13:57:36" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=POST path=/api/auth/logout status=401
+time="2025-12-30 14:03:26" level=info msg="Starting user login" file="service_impl/user_service_impl.go:134" func=Login username=rusgai
+time="2025-12-30 14:03:26" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:190" func=Login user_id=c961dfa6-db58-45fd-9d47-150e8cdaf8c5 username=rusgai
+time="2025-12-30 14:03:26" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=rusgai
+time="2025-12-30 14:03:26" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=137 method=POST path=/api/auth/login status=200
+time="2025-12-30 14:03:27" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 14:03:27" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=1 method=GET path=/api/auth/me status=401
+time="2025-12-30 14:03:27" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 14:03:27" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=3 method=GET path=/api/auth/me status=401
+time="2025-12-30 14:30:33" level=info msg="Database connection established"
+time="2025-12-30 14:30:33" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 14:30:33" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 14:30:33" level=info msg="Database migrations completed successfully"
+time="2025-12-30 14:30:33" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 14:30:33" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 14:30:33" level=info msg="Starting cache warming..."
+time="2025-12-30 14:30:33" level=info msg="Cache warming completed"
+time="2025-12-30 14:30:33" level=info msg="Organization database service initialized"
+time="2025-12-30 14:30:33" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 14:30:33" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 14:30:33" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 14:30:33" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 14:30:33" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 14:31:55" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=rusgai
+time="2025-12-30 14:31:55" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=c961dfa6-db58-45fd-9d47-150e8cdaf8c5 username=rusgai
+time="2025-12-30 14:31:55" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=rusgai
+time="2025-12-30 14:31:55" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=78 method=POST path=/api/auth/login status=200
+time="2025-12-30 14:31:55" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 14:31:55" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/me status=401
+time="2025-12-30 14:31:55" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 14:31:55" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=2 method=GET path=/api/auth/me status=401
+time="2025-12-30 14:41:28" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=rusgai
+time="2025-12-30 14:41:28" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=c961dfa6-db58-45fd-9d47-150e8cdaf8c5 username=rusgai
+time="2025-12-30 14:41:28" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=rusgai
+time="2025-12-30 14:41:28" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=58 method=POST path=/api/auth/login status=200
+time="2025-12-30 14:41:28" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 14:41:28" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=1 method=GET path=/api/auth/me status=401
+time="2025-12-30 14:41:28" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 14:41:28" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/me status=401
+time="2025-12-30 14:42:31" level=info msg="Starting user registration" email=ruslan.gaevoi10.1982@gmail.com file="service_impl/user_service_impl.go:53" func=Register username=liliay
+time="2025-12-30 14:42:31" level=info msg="User registered successfully" file="service_impl/user_service_impl.go:104" func=func1 user_id=4ad86860-6186-4d2a-9a38-286839b507fb username=liliay
+time="2025-12-30 14:42:31" level=info msg="User registered successfully" file="controllers/auth_controller.go:95" func=register username=liliay
+time="2025-12-30 14:42:31" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=63 method=POST path=/api/auth/register status=201
+time="2025-12-30 14:43:23" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=liliay
+time="2025-12-30 14:43:23" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=4ad86860-6186-4d2a-9a38-286839b507fb username=liliay
+time="2025-12-30 14:43:23" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=liliay
+time="2025-12-30 14:43:23" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=78 method=POST path=/api/auth/login status=200
+time="2025-12-30 14:43:24" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 14:43:24" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/me status=401
+time="2025-12-30 14:43:24" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 14:43:24" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/me status=401
+time="2025-12-30 14:48:20" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=rusgai
+time="2025-12-30 14:48:20" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=c961dfa6-db58-45fd-9d47-150e8cdaf8c5 username=rusgai
+time="2025-12-30 14:48:20" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=rusgai
+time="2025-12-30 14:48:20" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=77 method=POST path=/api/auth/login status=200
+time="2025-12-30 14:48:20" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 14:48:20" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/me status=401
+time="2025-12-30 14:48:20" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 14:48:20" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=1 method=GET path=/api/auth/me status=401
+time="2025-12-30 14:56:05" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=rusgai
+time="2025-12-30 14:56:05" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=c961dfa6-db58-45fd-9d47-150e8cdaf8c5 username=rusgai
+time="2025-12-30 14:56:05" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=rusgai
+time="2025-12-30 14:56:05" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=76 method=POST path=/api/auth/login status=200
+time="2025-12-30 14:56:05" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 14:56:05" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=1 method=GET path=/api/auth/me status=401
+time="2025-12-30 14:56:05" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 14:56:05" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=2 method=GET path=/api/auth/me status=401
+time="2025-12-30 15:19:28" level=info msg="Database connection established"
+time="2025-12-30 15:19:28" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 15:19:28" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 15:19:28" level=info msg="Database migrations completed successfully"
+time="2025-12-30 15:19:28" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 15:19:28" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 15:19:28" level=info msg="Starting cache warming..."
+time="2025-12-30 15:19:28" level=info msg="Cache warming completed"
+time="2025-12-30 15:19:28" level=info msg="Organization database service initialized"
+time="2025-12-30 15:19:28" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 15:19:28" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 15:19:28" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 15:19:28" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 15:19:28" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 15:20:24" level=warning msg="Missing Authorization header" path=/api/auth/login request_id=
+time="2025-12-30 15:20:24" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/login status=401
+time="2025-12-30 15:21:54" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=2 method=GET path=/health status=200
+time="2025-12-30 15:22:09" level=warning msg="Missing Authorization header" path=/api/auth/me request_id=
+time="2025-12-30 15:22:09" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/me status=401
+time="2025-12-30 15:22:32" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=test
+time="2025-12-30 15:22:32" level=warning msg="Login failed: user not found" file="service_impl/user_service_impl.go:161" func=Login username=test
+time="2025-12-30 15:22:32" level=warning msg="Login failed" file="controllers/auth_controller.go:129" func=login username=test
+time="2025-12-30 15:22:32" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=6 method=POST path=/api/auth/login status=401
+time="2025-12-30 15:22:50" level=warning msg="Validation failed for register request" error="Key: 'RegisterRequest.FullName' Error:Field validation for 'FullName' failed on the 'required' tag\nKey: 'RegisterRequest.Phone' Error:Field validation for 'Phone' failed on the 'required' tag\nKey: 'RegisterRequest.ConfirmPassword' Error:Field validation for 'ConfirmPassword' failed on the 'required' tag" file="controllers/auth_controller.go:75" func=register
+time="2025-12-30 15:22:50" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=POST path=/api/auth/register status=400
+time="2025-12-30 15:24:01" level=warning msg="Missing Authorization header" path=/api/auth/login request_id=
+time="2025-12-30 15:24:01" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/login status=401
+time="2025-12-30 15:28:16" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=testuser
+time="2025-12-30 15:28:16" level=warning msg="Login failed: user not found" file="service_impl/user_service_impl.go:161" func=Login username=testuser
+time="2025-12-30 15:28:16" level=warning msg="Login failed" file="controllers/auth_controller.go:129" func=login username=testuser
+time="2025-12-30 15:28:16" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=2 method=POST path=/api/auth/login status=401
+time="2025-12-30 15:28:42" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=2 method=GET path=/health status=200
+time="2025-12-30 15:29:20" level=info msg="Starting user registration" email=test@example.com file="service_impl/user_service_impl.go:53" func=Register username=testuser
+time="2025-12-30 15:29:20" level=info msg="User registered successfully" file="service_impl/user_service_impl.go:104" func=func1 user_id=cdad0169-f697-48dc-a6a7-dd26be07181a username=testuser
+time="2025-12-30 15:29:20" level=info msg="User registered successfully" file="controllers/auth_controller.go:95" func=register username=testuser
+time="2025-12-30 15:29:20" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=65 method=POST path=/api/auth/register status=201
+time="2025-12-30 15:29:41" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=testuser
+time="2025-12-30 15:29:41" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=cdad0169-f697-48dc-a6a7-dd26be07181a username=testuser
+time="2025-12-30 15:29:41" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=testuser
+time="2025-12-30 15:29:41" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=62 method=POST path=/api/auth/login status=200
+time="2025-12-30 15:29:55" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token format in context" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 15:29:55" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=2 method=GET path=/api/auth/me status=401
+time="2025-12-30 15:31:09" level=info msg="Database connection established"
+time="2025-12-30 15:31:09" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 15:31:09" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 15:31:09" level=info msg="Database migrations completed successfully"
+time="2025-12-30 15:31:09" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 15:31:09" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 15:31:09" level=info msg="Starting cache warming..."
+time="2025-12-30 15:31:09" level=info msg="Cache warming completed"
+time="2025-12-30 15:31:09" level=info msg="Organization database service initialized"
+time="2025-12-30 15:31:09" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 15:31:09" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 15:31:09" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 15:31:09" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 15:31:09" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 15:31:16" level=info msg="Database connection established"
+time="2025-12-30 15:31:16" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 15:31:16" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 15:31:17" level=info msg="Database migrations completed successfully"
+time="2025-12-30 15:31:17" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 15:31:17" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 15:31:17" level=info msg="Starting cache warming..."
+time="2025-12-30 15:31:17" level=info msg="Cache warming completed"
+time="2025-12-30 15:31:17" level=info msg="Organization database service initialized"
+time="2025-12-30 15:31:17" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 15:31:17" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 15:31:17" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 15:31:17" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 15:31:17" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 15:31:38" level=info msg="Database connection established"
+time="2025-12-30 15:31:38" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 15:31:38" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 15:31:38" level=info msg="Database migrations completed successfully"
+time="2025-12-30 15:31:38" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 15:31:38" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 15:31:38" level=info msg="Starting cache warming..."
+time="2025-12-30 15:31:38" level=info msg="Cache warming completed"
+time="2025-12-30 15:31:38" level=info msg="Organization database service initialized"
+time="2025-12-30 15:31:38" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 15:31:38" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 15:31:38" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 15:31:38" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 15:31:38" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 15:32:02" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=testuser
+time="2025-12-30 15:32:02" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=cdad0169-f697-48dc-a6a7-dd26be07181a username=testuser
+time="2025-12-30 15:32:02" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=testuser
+time="2025-12-30 15:32:02" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=59 method=POST path=/api/auth/login status=200
+time="2025-12-30 15:32:02" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token claims" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 15:32:02" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/me status=401
+time="2025-12-30 15:32:13" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=testuser
+time="2025-12-30 15:32:13" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=cdad0169-f697-48dc-a6a7-dd26be07181a username=testuser
+time="2025-12-30 15:32:13" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=testuser
+time="2025-12-30 15:32:13" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=58 method=POST path=/api/auth/login status=200
+time="2025-12-30 15:32:13" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token claims" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 15:32:13" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/me status=401
+time="2025-12-30 15:32:56" level=info msg="Database connection established"
+time="2025-12-30 15:32:56" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 15:32:56" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 15:32:56" level=info msg="Database migrations completed successfully"
+time="2025-12-30 15:32:56" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 15:32:56" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 15:32:56" level=info msg="Starting cache warming..."
+time="2025-12-30 15:32:56" level=info msg="Cache warming completed"
+time="2025-12-30 15:32:56" level=info msg="Organization database service initialized"
+time="2025-12-30 15:32:56" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 15:32:56" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 15:32:56" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 15:32:56" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 15:32:56" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 15:33:08" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/health status=200
+time="2025-12-30 15:33:16" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=testuser
+time="2025-12-30 15:33:16" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=cdad0169-f697-48dc-a6a7-dd26be07181a username=testuser
+time="2025-12-30 15:33:16" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=testuser
+time="2025-12-30 15:33:16" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=55 method=POST path=/api/auth/login status=200
+time="2025-12-30 15:33:16" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token claims" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 15:33:16" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/me status=401
+time="2025-12-30 15:33:51" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=testuser
+time="2025-12-30 15:33:51" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=cdad0169-f697-48dc-a6a7-dd26be07181a username=testuser
+time="2025-12-30 15:33:51" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=testuser
+time="2025-12-30 15:33:51" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=71 method=POST path=/api/auth/login status=200
+time="2025-12-30 15:33:51" level=warning msg="Failed to extract user ID from token" error="[INVALID_TOKEN] Invalid token claims" file="controllers/auth_controller.go:151" func=getCurrentUser
+time="2025-12-30 15:33:51" level=warning msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/me status=401
+time="2025-12-30 15:34:12" level=info msg="Database connection established"
+time="2025-12-30 15:34:12" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 15:34:12" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 15:34:12" level=info msg="Database migrations completed successfully"
+time="2025-12-30 15:34:12" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 15:34:12" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 15:34:12" level=info msg="Starting cache warming..."
+time="2025-12-30 15:34:12" level=info msg="Cache warming completed"
+time="2025-12-30 15:34:12" level=info msg="Organization database service initialized"
+time="2025-12-30 15:34:12" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 15:34:12" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 15:34:12" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 15:34:12" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 15:34:12" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 15:34:28" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=3 method=GET path=/health status=200
+time="2025-12-30 15:34:38" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=testuser
+time="2025-12-30 15:34:38" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=cdad0169-f697-48dc-a6a7-dd26be07181a username=testuser
+time="2025-12-30 15:34:38" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=testuser
+time="2025-12-30 15:34:38" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=62 method=POST path=/api/auth/login status=200
+time="2025-12-30 15:34:38" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/me status=200
+time="2025-12-30 15:35:13" level=info msg="Starting user login" file="service_impl/user_service_impl.go:135" func=Login username=testuser
+time="2025-12-30 15:35:13" level=info msg="User logged in successfully" file="service_impl/user_service_impl.go:191" func=Login user_id=cdad0169-f697-48dc-a6a7-dd26be07181a username=testuser
+time="2025-12-30 15:35:13" level=info msg="User logged in successfully" file="controllers/auth_controller.go:133" func=login username=testuser
+time="2025-12-30 15:35:13" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=59 method=POST path=/api/auth/login status=200
+time="2025-12-30 15:35:13" level=info msg="HTTP Request" ip=127.0.0.1 latency_ms=0 method=GET path=/api/auth/me status=200
+time="2025-12-30 15:35:30" level=info msg="Database connection established"
+time="2025-12-30 15:35:30" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 15:35:30" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 15:35:30" level=info msg="Database migrations completed successfully"
+time="2025-12-30 15:35:30" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 15:35:30" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 15:35:30" level=info msg="Starting cache warming..."
+time="2025-12-30 15:35:30" level=info msg="Cache warming completed"
+time="2025-12-30 15:35:30" level=info msg="Organization database service initialized"
+time="2025-12-30 15:35:30" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 15:35:30" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 15:35:30" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 15:35:30" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 15:35:30" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 15:36:02" level=info msg="Database connection established"
+time="2025-12-30 15:36:02" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 15:36:02" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 15:36:02" level=info msg="Database migrations completed successfully"
+time="2025-12-30 15:36:02" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 15:36:02" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 15:36:02" level=info msg="Starting cache warming..."
+time="2025-12-30 15:36:02" level=info msg="Cache warming completed"
+time="2025-12-30 15:36:02" level=info msg="Organization database service initialized"
+time="2025-12-30 15:36:02" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 15:36:02" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 15:36:02" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 15:36:02" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 15:36:02" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 15:36:40" level=info msg="Database connection established"
+time="2025-12-30 15:36:40" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 15:36:40" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 15:36:40" level=info msg="Database migrations completed successfully"
+time="2025-12-30 15:36:40" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 15:36:40" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 15:36:40" level=info msg="Starting cache warming..."
+time="2025-12-30 15:36:40" level=info msg="Cache warming completed"
+time="2025-12-30 15:36:40" level=info msg="Organization database service initialized"
+time="2025-12-30 15:36:40" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 15:36:40" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 15:36:40" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 15:36:40" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 15:36:40" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 15:36:56" level=info msg="Database connection established"
+time="2025-12-30 15:36:56" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 15:36:56" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 15:36:56" level=info msg="Database migrations completed successfully"
+time="2025-12-30 15:36:56" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 15:36:56" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 15:36:56" level=info msg="Starting cache warming..."
+time="2025-12-30 15:36:56" level=info msg="Cache warming completed"
+time="2025-12-30 15:36:56" level=info msg="Organization database service initialized"
+time="2025-12-30 15:36:56" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 15:36:56" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 15:36:56" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 15:36:56" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 15:36:56" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 15:39:20" level=info msg="Database connection established"
+time="2025-12-30 15:39:20" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 15:39:20" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 15:39:20" level=info msg="Database migrations completed successfully"
+time="2025-12-30 15:39:20" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 15:39:20" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 15:39:20" level=info msg="Starting cache warming..."
+time="2025-12-30 15:39:20" level=info msg="Cache warming completed"
+time="2025-12-30 15:39:20" level=info msg="Organization database service initialized"
+time="2025-12-30 15:39:20" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 15:39:20" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 15:39:20" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 15:39:20" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 15:39:20" level=info msg="Starting server on localhost:8000"
+time="2025-12-30 16:52:57" level=info msg="Database connection established"
+time="2025-12-30 16:52:57" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 16:52:57" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 16:52:57" level=info msg="Database migrations completed successfully"
+time="2025-12-30 16:52:57" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 16:52:57" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 16:52:57" level=info msg="Starting cache warming..."
+time="2025-12-30 16:52:57" level=info msg="Cache warming completed"
+time="2025-12-30 16:52:57" level=info msg="Organization database service initialized"
+time="2025-12-30 16:52:57" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 16:52:57" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 16:52:57" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 16:52:57" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 16:52:57" level=info msg="Starting server on localhost:8080"
+time="2025-12-30 16:57:12" level=info msg="Database connection established"
+time="2025-12-30 16:57:12" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 16:57:12" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 16:57:12" level=info msg="Database migrations completed successfully"
+time="2025-12-30 16:57:12" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 16:57:12" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 16:57:12" level=info msg="Starting cache warming..."
+time="2025-12-30 16:57:12" level=info msg="Cache warming completed"
+time="2025-12-30 16:57:12" level=info msg="Organization database service initialized"
+time="2025-12-30 16:57:12" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 16:57:12" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 16:57:12" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 16:57:12" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 16:57:12" level=info msg="Starting server on localhost:8080"
+time="2025-12-30 17:52:31" level=info msg="Database connection established"
+time="2025-12-30 17:52:31" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 17:52:31" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 17:52:31" level=info msg="Database migrations completed successfully"
+time="2025-12-30 17:52:31" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 17:52:31" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 17:52:31" level=info msg="Starting cache warming..."
+time="2025-12-30 17:52:31" level=info msg="Cache warming completed"
+time="2025-12-30 17:52:31" level=info msg="Organization database service initialized"
+time="2025-12-30 17:52:31" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 17:52:31" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 17:52:31" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 17:52:31" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 17:52:31" level=info msg="Starting server on localhost:8080"
+time="2025-12-30 18:11:19" level=info msg="Database connection established"
+time="2025-12-30 18:11:19" level=info msg="Attempting to connect to Redis (attempt 1/3)..."
+time="2025-12-30 18:11:19" level=info msg="Redis connected successfully at localhost:6379"
+time="2025-12-30 18:11:19" level=info msg="Database migrations completed successfully"
+time="2025-12-30 18:11:19" level=info msg="Dependency injection container initialized with Redis cache"
+time="2025-12-30 18:11:19" level=info msg="Rate limiter initialized with Redis backend"
+time="2025-12-30 18:11:19" level=info msg="Starting cache warming..."
+time="2025-12-30 18:11:19" level=info msg="Cache warming completed"
+time="2025-12-30 18:11:19" level=info msg="Organization database service initialized"
+time="2025-12-30 18:11:19" level=info msg="AuthController initialized" file="controllers/auth_controller.go:37" func=NewAuthController
+time="2025-12-30 18:11:19" level=info msg="EsfDocumentController initialized" file="controllers/esf_document_controller.go:41" func=NewEsfDocumentController
+time="2025-12-30 18:11:19" level=info msg="EsfOrganizationController initialized" file="controllers/esf_organization_controller.go:39" func=NewEsfOrganizationController
+time="2025-12-30 18:11:19" level=info msg="UserController initialized" file="controllers/user_controller.go:27" func=NewUserController
+time="2025-12-30 18:11:19" level=info msg="Starting server on localhost:8080"

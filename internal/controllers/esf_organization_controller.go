@@ -36,7 +36,7 @@ func NewEsfOrganizationController(app *fiber.App, log *logrus.Logger, db *gorm.D
 		db:      db,
 	}
 
-	controller.logger.Info(context.TODO(), "EsfOrganizationController initialized", logrus.Fields{})
+	controller.logger.Info(context.Background(), "EsfOrganizationController initialized", logrus.Fields{})
 	controller.registerRoutes(app)
 }
 

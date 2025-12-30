@@ -18,7 +18,10 @@ import (
 // JWTBlacklistMiddleware создает JWT middleware с поддержкой blacklist для logout
 func JWTBlacklistMiddleware(secret string, logger *logrus.Logger, cacheManager cache.CacheManager) fiber.Handler {
 	if secret == "" {
-		panic("JWT_SECRET is required for JWT middleware")
+		logger.Fatal("JWT_SECRET is required for JWT middleware")
+		return func(c *fiber.Ctx) error {
+			return response.Error(c, apperror.New(apperror.ErrInternal, "JWT middleware configuration error"))
+		}
 	}
 
 	return func(c *fiber.Ctx) error {
@@ -46,9 +49,9 @@ func JWTBlacklistMiddleware(secret string, logger *logrus.Logger, cacheManager c
 
 		token := parts[1]
 
-		// Парсим токен без проверки подписи сначала, чтобы получить экспирацию
-		claims := &jwt.MapClaims{}
-		parsedToken, err := jwt.ParseWithClaims(token, claims, func(t *jwt.Token) (interface{}, error) {
+		// Парсим токен с валидацией подписи
+		// Важно: используем jwt.MapClaims{} без указателя для совместимости с GetUserIDFromContext
+		parsedToken, err := jwt.ParseWithClaims(token, jwt.MapClaims{}, func(t *jwt.Token) (interface{}, error) {
 			return []byte(secret), nil
 		})
 
@@ -81,8 +84,9 @@ func JWTBlacklistMiddleware(secret string, logger *logrus.Logger, cacheManager c
 			return response.Error(c, apperror.New(apperror.ErrInvalidToken, "Token has been revoked"))
 		}
 
-		// Сохраняем токен и claims в контекст для использования в handlers
-		c.Locals("user", claims)
+		// Сохраняем parsed token (не claims) в контекст для использования в handlers
+		// GetUserIDFromContext и GetClaimsFromContext ожидают *jwt.Token
+		c.Locals("user", parsedToken)
 		c.Locals("token", token)
 		c.Locals("token_hash", tokenHash)
 

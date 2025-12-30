@@ -27,7 +27,8 @@ type esfDocumentService struct {
 // NewEsfDocumentService создает новый document service с обязательными зависимостями
 func NewEsfDocumentService(repo repository.EsfDocumentRepository, db *gorm.DB, log *logrus.Logger) services.EsfDocumentService {
 	if db == nil {
-		panic("database connection is required for EsfDocumentService")
+		log.Fatal("database connection is required for EsfDocumentService")
+		return nil
 	}
 	return &esfDocumentService{
 		repo:         repo,

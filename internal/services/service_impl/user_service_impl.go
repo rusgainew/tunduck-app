@@ -31,7 +31,8 @@ type userService struct {
 // NewUserService создает новый user service с обязательными зависимостями
 func NewUserService(repo repository.UserRepository, db *gorm.DB, log *logrus.Logger) services.UserService {
 	if db == nil {
-		panic("database connection is required for UserService")
+		log.Fatal("database connection is required for UserService")
+		return nil
 	}
 	return &userService{
 		repo:         repo,

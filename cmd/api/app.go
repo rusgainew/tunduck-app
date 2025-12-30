@@ -80,7 +80,7 @@ func NewApp(ctx context.Context, envPath string) (*App, error) {
 	})
 
 	// Пытаемся подключиться к Redis с retry logic
-	if err := app.connectToRedisWithRetry(ctx, redisAddr, 3); err != nil {
+	if err := app.connectToRedisWithRetry(ctx, 3); err != nil {
 		app.logger.WithError(err).Warn("Failed to connect to Redis after retries (cache will be unavailable, but app will continue)")
 	} else {
 		app.logger.Infof("Redis connected successfully at %s", redisAddr)
@@ -112,8 +112,8 @@ func NewApp(ctx context.Context, envPath string) (*App, error) {
 	// Добавляем CORS middleware
 	origins := app.conf.GetConValue("ALLOWED_ORIGINS")
 	if origins == "" {
-		// по умолчанию разрешаем порты разработки 3000 и 3002
-		origins = "http://localhost:3000,http://localhost:3002"
+		// по умолчанию разрешаем порты разработки 3000, 3002, 5173 (Vite)
+		origins = "http://localhost:3000,http://localhost:3002,http://localhost:5173"
 	}
 	app.fiber.Use(cors.New(cors.Config{
 		AllowOrigins: origins,
@@ -312,7 +312,7 @@ func (a *App) ShutdownWithContext(ctx context.Context) error {
 }
 
 // connectToRedisWithRetry пытается подключиться к Redis с retry logic
-func (a *App) connectToRedisWithRetry(ctx context.Context, addr string, maxRetries int) error {
+func (a *App) connectToRedisWithRetry(ctx context.Context, maxRetries int) error {
 	var lastErr error
 	for attempt := 1; attempt <= maxRetries; attempt++ {
 		a.logger.Infof("Attempting to connect to Redis (attempt %d/%d)...", attempt, maxRetries)

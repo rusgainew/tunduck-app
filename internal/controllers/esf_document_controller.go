@@ -38,7 +38,7 @@ func NewEsfDocumentController(app *fiber.App, log *logrus.Logger, db *gorm.DB) {
 		db:      db,
 	}
 
-	l.Info(context.TODO(), "EsfDocumentController initialized")
+	l.Info(context.Background(), "EsfDocumentController initialized")
 	controller.registerRoutes(app)
 }
 
